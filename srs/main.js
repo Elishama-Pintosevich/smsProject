@@ -1,7 +1,7 @@
 require("dotenv").config()
 
 const server = require("express")()
-const port = process.env.EXPRESS_PORT || 3002
+const port = process.env.PORT || 3002
 
 server.get("/test", async(req, res)=>{
     res.send("hello from express")
